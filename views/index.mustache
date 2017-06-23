@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form with Login</title>
+  </head>
+  <body>
+    <h1>Welcome to the Page!</h1>
+    <form action="/login" method="POST">
+      <h2>Complete the required information:</h2>
+      {{#userList}}
+      <h3>Username</h3>
+      <input type="text" name="username" placeholder="Enter username" />
+      <h3>Password</h3>
+      <input type="password" name="password" placeholder="Enter password" />
+      {{/userList}}
+      <button type="submit" name="submit">Submit</button>
+    </form>
+
+    <script src="../index.js"></script>
+  </body>
+</html>
